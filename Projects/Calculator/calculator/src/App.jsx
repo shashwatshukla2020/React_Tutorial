@@ -1,24 +1,15 @@
-
-import Display from './components/Display'
-import styles from './App.module.css'
+import Display from "./components/Display";
+import styles from "./App.module.css";
+import ButtonsContainer from "./components/ButtonsContainer";
 
 function App() {
-
   return (
     <div className={styles.calculator}>
+      {/*For Adding style, we used styles.calculator */}
       <Display></Display>
-      <div className={styles.buttonsContainer}>
-        <button className={styles.buttons}>C</button>
-        <button className={styles.buttons}>1</button>
-        <button className={styles.buttons}>2</button>
-        <button className={styles.buttons}>+</button>
-        <button className={styles.buttons}>3</button>
-        <button className={styles.buttons}>4</button>
-        <button className={styles.buttons}>5</button>
-
-      </div>
+      <ButtonsContainer></ButtonsContainer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
